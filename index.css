@@ -1,0 +1,27 @@
+:root{
+    --default-toc-width: 25vw;
+    --small-toc-width:50vw;
+}
+body{
+    margin:0px;
+    display:flex;
+    /* background-color:black */
+}
+.toc{
+    height:100vh;
+    /* width:var(--default-toc-width); */
+    /* width:25vw; */
+    background-color:black;
+    flex-grow:1;
+    min-width:308px;
+}
+.content{
+    /* width:75vw; */
+    padding-top: 5vw;
+    flex-grow:3;
+}
+/* @media screen and (max-width: 840px) {
+    :root {
+     --default-toc-width: var(--small-toc-width);
+   }
+ } */
