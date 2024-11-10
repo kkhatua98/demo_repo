@@ -12,14 +12,14 @@ body{
 .toc{
     height:100vh;
     /* width:var(--default-toc-width); */
-    /* width:0.001%; */
+    width:0.001%;
     /* width:1px; */
     background-color:rgb(29, 29, 29);
     flex-grow:1;
+    /* flex-basis:2vw; */
     display:flex;
     flex-direction:column;
-    flex-basis:25vw;
-    /* min-width: 40px; */
+    min-width: 40px;
     /* max-width: 25vh; */
 }
 .collapse{
@@ -60,10 +60,11 @@ details > summary {
     width: 0px;
     background: transparent; /* make scrollbar transparent */
 }
-/* .toc[open] {
+.toc[open] {
     width: 25vw;
     width:var(--default-toc-width)
-} */
+    /* rotate: 180deg; */
+}
 /* .toc[open] > summary:after{
     rotate: 180deg;
 } */
@@ -74,8 +75,8 @@ a{
     display:block;
     word-break: break-all;
 }
-/* @media screen and (max-width: 840px) {
+@media screen and (max-width: 840px) {
     :root {
      --default-toc-width: var(--small-toc-width);
    }
- } */
+ }
